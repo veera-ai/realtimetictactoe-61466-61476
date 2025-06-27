@@ -1,7 +1,7 @@
 //
 // API UTILS: Handles REST calls to backend for game actions.
 //
-const BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:3001';
+const BASE_URL = 'https://vscode-internal-28-dev.dev01.cloud.kavia.ai:3001';
 
 //
 // PUBLIC_INTERFACE

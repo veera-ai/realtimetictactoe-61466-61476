@@ -41,7 +41,10 @@ function App() {
     setStep('playing');
     setIsSpectator(false);
     setError('');
-    setWsUrl(`${window.location.protocol === 'https:' ? 'wss' : 'ws'}://${window.location.hostname}:3001/ws/games/${id}?player=${symbol}`);
+    // Always use the deployed backend endpoint and wss protocol
+    setWsUrl(
+      `wss://vscode-internal-28-dev.dev01.cloud.kavia.ai:3001/ws/games/${id}?player=${symbol}`
+    );
     // State will be synced by ws or fetch below
   };
 

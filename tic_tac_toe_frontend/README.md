@@ -2,6 +2,12 @@
 
 This project provides a minimal React template with a clean, modern UI and minimal dependencies.
 
+## Backend Endpoint Notice
+
+This frontend is preconfigured to use the following backend API and WebSocket endpoint for all gameplay:
+**https://vscode-internal-28-dev.dev01.cloud.kavia.ai:3001**
+If backend endpoint changes in the future, update `src/api.js` and WebSocket URL in `src/App.js` accordingly.
+
 ## Features
 
 - **Lightweight**: No heavy UI frameworks - uses only vanilla CSS and React
