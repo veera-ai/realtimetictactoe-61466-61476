@@ -80,7 +80,7 @@ function App() {
   );
 
   // Attach WebSocket when in game
-  const ws = useWebSocket(wsUrl, handleWsMsg);
+  useWebSocket(wsUrl, handleWsMsg);
 
   // On move on board (row,col)
   const handleMove = async (row, col) => {
